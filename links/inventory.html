@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="inventory.css" />
+    <title>MTA Project</title>
+    <script src="./inventory.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <div class="logo">
+          <img
+            src="../assets/images/219539-removebg-preview.png"
+            alt=""
+            width="50px"
+          />
+          <h3>JenAuto</h3>
+        </div>
+        <div class="links">
+          <p><a href="../index.html">Home</a></p>
+          <p><a href="./inventory.html">Inventory</a></p>
+          <p><a href="./about.html">About</a></p>
+          <p><a href="./contact.html">Contact</a></p>
+        </div>
+        <div class="contact">
+          <p>📞 +234 9116526973</p>
+          <p><a href="">📧sales@jenauto.com</a></p>
+        </div>
+      </div>
+    </header>
+
+    <section class="inventory">
+      <div class="inventoryHead">
+        <h1>Gallery</h1>
+        <p>Browse our selection of luxury vehicles</p>
+      </div>
+
+      <div class="filter">
+        <input
+          type="search"
+          name=""
+          id="carSearch"
+          placeholder="Search by name or brand "
+        />
+        <select name="conditions" id="conditionFilter">
+          <option value="all">All conditions</option>
+          <option value="New">New</option>
+          <option value="Used">Used</option>
+        </select>
+
+        <select name="brands" id="brandFilter">
+          <option value="all">All brands</option>
+          <option value="BMW">BMW</option>
+          <option value="Mercedes">Mercedes</option>
+          <option value="Audi">Audi</option>
+          <option value="Porsche">Porsche</option>
+          <option value="Tesla">Tesla</option>
+          <option value="Lexus">Lexus</option>
+          <option value="GWM">GWM</option>
+          <option value="Toyota">Toyota</option>
+        </select>
+      </div>
+
+      <div class="cars">
+        <div class="car" data-brand="BMW" data-condition="New">
+          <div
+            class="carImage"
+            style="
+              background: url(&quot;./assets/images/images\ \(1\).jpeg&quot;);
+            "
+          >
+            <button style="color: white">New</button>
+          </div>
+          <div class="cardetails">
+            <p>BMW</p>
+            <h4>M4 Competition</h4>
+            <h3>$78,900</h3>
+            <hr />
+            <div class="specs">
+              <div class="spec">
+                <p>Mileage</p>
+                <h5>1,200 mi</h5>
+              </div>
+
+              <div class="spec">
+                <p>Transmission</p>
+                <h5>Auto</h5>
+              </div>
+
+              <div class="spec">
+                <p>Fuel</p>
+                <h5>Gas</h5>
+              </div>
+            </div>
+            <hr />
+            <button disabled>Out of stock</button>
+          </div>
+        </div>
+
+        <div class="car" data-brand="Mercedes" data-condition="Used">
+          <div
+            class="carImage"
+            style="background: url(assets/images/images\ \(3\).jpeg)"
+          >
+            <button style="color: white">Used</button>
+          </div>
+          <div class="cardetails">
+            <p>Mercedes</p>
+            <h4>GLE 450 4MATIC</h4>
+            <h3>$65,900</h3>
+            <hr />
+            <div class="specs">
+              <div class="spec">
+                <p>Mileage</p>
+                <h5>12,500 mi</h5>
+              </div>
+
+              <div class="spec">
+                <p>Transmission</p>
+                <h5>Auto</h5>
+              </div>
+
+              <div class="spec">
+                <p>Fuel</p>
+                <h5>Gas</h5>
+              </div>
+            </div>
+            <hr />
+            <button disabled>Out of stock</button>
+          </div>
+        </div>
+
+        <div class="car" data-brand="Mercedes" data-condition="New">
+          <div
+            class="carImage"
+            style="background: url(assets/images/images\ \(4\).jpeg)"
+          >
+            <button style="color: white">New</button>
+          </div>
+          <div class="cardetails">
+            <p>Mercedes</p>
+            <h4>E-Class Sedan</h4>
+            <h3>$58,500</h3>
+            <hr />
+            <div class="specs">
+              <div class="spec">
+                <p>Mileage</p>
+                <h5>859 mi</h5>
+              </div>
+
+              <div class="spec">
+                <p>Transmission</p>
+                <h5>Auto</h5>
+              </div>
+
+              <div class="spec">
+                <p>Fuel</p>
+                <h5>Hybrid</h5>
+              </div>
+            </div>
+            <hr />
+            <button disabled>Out of stock</button>
+          </div>
+        </div>
+
+        <div class="car" data-brand="Audi" data-condition="Used">
+          <div
+            class="carImage"
+            style="background: url(assets/images/images\ \(5\).jpeg)"
+          >
+            <button style="color: white">Used</button>
+          </div>
+          <div class="cardetails">
+            <p>Audi</p>
+            <h4>A6 Quatrro</h4>
+            <h3>$54,200</h3>
+            <hr />
+            <div class="specs">
+              <div class="spec">
+                <p>Mileage</p>
+                <h5>8,900 mi</h5>
+              </div>
+
+              <div class="spec">
+                <p>Transmission</p>
+                <h5>Auto</h5>
+              </div>
+
+              <div class="spec">
+                <p>Fuel</p>
+                <h5>Gas</h5>
+              </div>
+            </div>
+            <hr />
+            <button disabled>Out of stock</button>
+          </div>
+        </div>
+
+        <div class="car" data-brand="Porsche" data-condition="New">
+          <div
+            class="carImage"
+            style="background: url(assets/images/images\ \(6\).jpeg)"
+          >
+            <button style="color: white">New</button>
+          </div>
+          <div class="cardetails">
+            <p>Porsche</p>
+            <h4>911 Carrera</h4>
+            <h3>$125,000</h3>
+            <hr />
+            <div class="specs">
+              <div class="spec">
+                <p>Mileage</p>
+                <h5>500 mi</h5>
+              </div>
+
+              <div class="spec">
+                <p>Transmission</p>
+                <h5>Manual</h5>
+              </div>
+
+              <div class="spec">
+                <p>Fuel</p>
+                <h5>Gas</h5>
+              </div>
+            </div>
+            <hr />
+            <button disabled>Out of stock</button>
+          </div>
+        </div>
+
+        <div class="car" data-brand="Tesla" data-condition="New">
+          <div
+            class="carImage"
+            style="background: url(./assets/images/images\ \(8\).jpeg)"
+          >
+            <button style="color: white">New</button>
+          </div>
+          <div class="cardetails">
+            <p>Tesla</p>
+            <h4>Model S Plaid</h4>
+            <h3>$89,990</h3>
+            <hr />
+            <div class="specs">
+              <div class="spec">
+                <p>Mileage</p>
+                <h5>300 mi</h5>
+              </div>
+
+              <div class="spec">
+                <p>Transmission</p>
+                <h5>Auto</h5>
+              </div>
+
+              <div class="spec">
+                <p>Fuel</p>
+                <h5>Electric</h5>
+              </div>
+            </div>
+            <hr />
+            <button disabled>Out of stock</button>
+          </div>
+        </div>
+
+        <div class="car" data-brand="GWM" data-condition="New">
+          <div
+            class="carImage"
+            style="background: url(assets/images/images\ \(9\).jpeg)"
+          >
+            <button style="color: white">New</button>
+          </div>
+          <div class="cardetails">
+            <p>GWM</p>
+            <h4>Haval Jolion</h4>
+            <h3>$35,740</h3>
+            <hr />
+            <div class="specs">
+              <div class="spec">
+                <p>Mileage</p>
+                <h5>570 mi</h5>
+              </div>
+
+              <div class="spec">
+                <p>Transmission</p>
+                <h5>Auto</h5>
+              </div>
+
+              <div class="spec">
+                <p>Fuel</p>
+                <h5>CNG</h5>
+              </div>
+            </div>
+            <hr />
+            <button><a href="../index.html">View details</a></button>
+          </div>
+        </div>
+
+        <div class="car" data-brand="GWM" data-condition="New">
+          <div
+            class="carImage"
+            style="background: url(./assets/images/images\ \(10\).jpeg)"
+          >
+            <button style="color: white">New</button>
+          </div>
+          <div class="cardetails">
+            <p>GWM</p>
+            <h4>Haval H9</h4>
+            <h3>$48,000</h3>
+            <hr />
+            <div class="specs">
+              <div class="spec">
+                <p>Mileage</p>
+                <h5>900 mi</h5>
+              </div>
+
+              <div class="spec">
+                <p>Transmission</p>
+                <h5>Auto</h5>
+              </div>
+
+              <div class="spec">
+                <p>Fuel</p>
+                <h5>CNG</h5>
+              </div>
+            </div>
+            <hr />
+            <button><a href="../index.html">View details</a></button>
+          </div>
+        </div>
+
+        <div class="car" data-brand="Toyota" data-condition="New">
+          <div
+            class="carImage"
+            style="background: url(assets/images/images\ \(11\).jpeg)"
+          >
+            <button style="color: white">New</button>
+          </div>
+          <div class="cardetails">
+            <p>Toyota</p>
+            <h4>Hilux</h4>
+            <h3>$31,600</h3>
+            <hr />
+            <div class="specs">
+              <div class="spec">
+                <p>Mileage</p>
+                <h5>100 mi</h5>
+              </div>
+
+              <div class="spec">
+                <p>Transmission</p>
+                <h5>Auto</h5>
+              </div>
+
+              <div class="spec">
+                <p>Fuel</p>
+                <h5>PMS</h5>
+              </div>
+            </div>
+            <hr />
+            <button><a href="../index.html">View details</a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

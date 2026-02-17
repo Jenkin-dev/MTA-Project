@@ -1,0 +1,130 @@
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html {
+  background-color: rgb(5, 9, 43);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* padding-bottom: 50px; */
+  margin: 10px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgb(10, 19, 70);
+}
+
+a {
+  color: inherit;
+}
+
+.topbar {
+  display: flex;
+  margin-bottom: 0px;
+  height: fit-content;
+  gap: 3em;
+
+  justify-content: space-around;
+  align-items: center;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-size: 50px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.links p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  width: 75%;
+  background-color: rgb(10, 19, 70);
+  margin: 5em auto;
+  padding: 3em;
+}
+
+.form .head {
+  text-align: center;
+  margin: 30px auto;
+  width: 100%;
+}
+
+.form input,
+button {
+  display: block;
+  margin: 1em auto;
+  padding: 0 2em;
+  width: 70%;
+  background-color: inherit;
+  border-color: white;
+  border-radius: 1em;
+  border-width: 2px;
+  height: 5em;
+}
+
+/*  */
+
+button {
+  background-color: white;
+  color: rgb(10, 19, 70);
+  height: 3em;
+  width: 10em;
+  border-radius: 50%;
+  border-width: 0;
+  text-align: center;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    display: none;
+  }
+
+  .logo h3 {
+    font-size: 40px;
+  }
+
+  .topbar {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .form {
+    width: 95%;
+    padding: 1em;
+  }
+
+  .form .head {
+    text-align: center;
+    margin: 30px auto;
+    width: 100%;
+  }
+
+  .form input {
+    width: 90%;
+    height: 4em;
+  }
+}

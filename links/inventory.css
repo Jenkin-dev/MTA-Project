@@ -1,0 +1,230 @@
+* {
+  margin: 0px;
+  padding: 0;
+  /* box-sizing: border-box; */
+  color: white;
+}
+
+html {
+  background-color: rgb(5, 9, 43);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* padding-bottom: 50px; */
+  margin: 10px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgb(10, 19, 70);
+}
+
+a {
+  color: inherit;
+}
+
+.topbar {
+  display: flex;
+  margin-bottom: 0px;
+  height: fit-content;
+  gap: 3em;
+
+  justify-content: space-around;
+  align-items: center;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-size: 50px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.links p {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.inventoryHead {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 3rem;
+  color: white;
+}
+
+.inventory {
+  margin: 0 5% 5em;
+}
+
+.inventory p {
+  color: gray;
+}
+
+.inventory h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.filter {
+  padding: 1em;
+  background-color: rgb(5, 9, 55);
+  border-radius: 1em;
+  display: flex;
+  margin-bottom: 3em;
+  justify-content: space-around;
+}
+
+.filter input,
+.filter select {
+  width: 40%;
+  background-color: rgb(5, 9, 43);
+  border-radius: 2em;
+  border-width: 0;
+  height: 2rem;
+  color: white;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.filter select {
+  width: 20%;
+}
+
+.cars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.car {
+  width: 30%;
+  min-width: 18em;
+  max-width: 50%;
+  margin: 10px;
+}
+
+.car button {
+  position: relative;
+  top: 5px;
+  left: 10px;
+  display: inline-block;
+  background-color: green;
+  padding: 5px 1px;
+  border-width: 0;
+  border-radius: 10px;
+  width: 4em;
+}
+
+.carImage {
+  width: 100%;
+  height: 15em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 0px;
+}
+
+.cardetails {
+  background-color: rgb(5, 9, 55);
+  padding: 0 5% 1em;
+  margin: 0px;
+  width: 90%;
+  display: inline-block;
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.cardetails h3 {
+  color: aqua;
+}
+
+.cardetails button:disabled,
+.cardetails button:not(:disabled) {
+  background-color: gray;
+  width: 90%;
+  padding: 0.5em 2em;
+  color: white;
+  font-weight: 600;
+  font-size: larger;
+  cursor: not-allowed;
+}
+
+.cardetails button:not(:disabled) {
+  background: #1d4ed8;
+  cursor: wait;
+}
+
+.cardetails button:hover:not(:disabled),
+.cardetails button:active:not(:disabled) {
+  background: #1d9ed8;
+  cursor: wait;
+}
+
+button a {
+  text-decoration: none;
+}
+.cardetails h4 {
+  font-size: 1.5em;
+}
+
+.specs {
+  display: flex;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.spec {
+  margin: 0px;
+}
+
+.spec p,
+h5 {
+  margin-top: 0px;
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    display: none;
+  }
+
+  .logo h3 {
+    font-size: 40px;
+  }
+
+  .topbar {
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .filter {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter input,
+  .filter select {
+    width: 100%;
+    height: 3rem;
+    color: white;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
