@@ -12,6 +12,10 @@ html {
   margin: 10px;
 }
 
+textarea {
+  background-color: red !important;
+}
+
 header {
   position: sticky;
   top: 0;
