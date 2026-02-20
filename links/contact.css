@@ -83,7 +83,7 @@ a {
   height: 5em;
   color: white;
 }
-.form textarea {
+.form #message {
   height: 10em;
   resize: none;
   display: block;
