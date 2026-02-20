@@ -73,22 +73,21 @@ a {
 }
 
 .form input,
-button,
 .form textarea {
   display: block;
   margin: 1em auto;
   padding: 0 2em;
   width: 70%;
-  background-color: inherit;
-  border-color: white;
+  background-color: rgb(10, 19, 70);
+  border: 2px solid white;
   border-radius: 1em;
-  border-width: 2px;
   height: 5em;
+  color: white;
 }
-
 .form textarea {
-  height: fit-content;
+  height: 10em;
   padding-top: 1em;
+  resize: none;
 }
 
 /*  */
@@ -102,6 +101,7 @@ button {
   border-width: 0;
   text-align: center;
   margin: auto;
+  display: block;
 }
 
 @media (max-width: 600px) {
