@@ -73,7 +73,8 @@ a {
 }
 
 .form input,
-button {
+button,
+textarea {
   display: block;
   margin: 1em auto;
   padding: 0 2em;
@@ -83,6 +84,11 @@ button {
   border-radius: 1em;
   border-width: 2px;
   height: 5em;
+}
+
+textarea {
+  height: fit-content;
+  padding-top: 1em;
 }
 
 /*  */
@@ -126,5 +132,10 @@ button {
   .form input {
     width: 90%;
     height: 4em;
+  }
+
+  textarea {
+    width: 90%;
+    height: fit-content;
   }
 }
