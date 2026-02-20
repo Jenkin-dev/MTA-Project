@@ -72,8 +72,7 @@ a {
   width: 100%;
 }
 
-.form input,
-.form textarea {
+.form input {
   display: block;
   margin: 1em auto;
   padding: 0 2em;
@@ -83,11 +82,6 @@ a {
   border-radius: 1em;
   height: 5em;
   color: white;
-}
-.form textarea {
-  height: 10em;
-  padding-top: 1em;
-  resize: none;
 }
 
 /*  */
