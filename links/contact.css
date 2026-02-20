@@ -12,9 +12,9 @@ html {
   margin: 10px;
 }
 
-textarea {
+/* textarea {
   background-color: red !important;
-}
+} */
 
 header {
   position: sticky;
