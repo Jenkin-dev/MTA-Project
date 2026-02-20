@@ -32,23 +32,41 @@
 
     <section>
       <section class="form">
-        <h1 class="head">Contact Form</h1>
-        <input type="text" placeholder="Full Name" name="Fullname" id="" />
-        <input type="email" name="Email" id="" placeholder="Email address" />
-        <input
-          type="tel"
-          name="Phone Number"
-          id=""
-          placeholder="Mobile Number"
-        />
-        <input
-          type="text"
-          name="Residential address"
-          id=""
-          placeholder="Address"
-        />
-        <a href="../index.html"><button type="submit">Submit</button></a>
+        <form id="contactForm">
+          <h1 class="head">Contact Form</h1>
+          <input
+            type="text"
+            placeholder="Full Name"
+            name="Fullname"
+            id=""
+            required
+          />
+          <input
+            type="email"
+            name="Email"
+            id=""
+            placeholder="Email address"
+            required
+          />
+          <input
+            type="tel"
+            name="Phone Number"
+            id=""
+            placeholder="Mobile Number"
+            required
+          />
+          <input
+            type="text"
+            name="Residential address"
+            id=""
+            placeholder="Address"
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
       </section>
     </section>
   </body>
+
+  <script src="./contact.js"></script>
 </html>
