@@ -74,7 +74,7 @@ a {
 
 .form input,
 button,
-textarea {
+.form textarea {
   display: block;
   margin: 1em auto;
   padding: 0 2em;
@@ -86,7 +86,7 @@ textarea {
   height: 5em;
 }
 
-textarea {
+.form textarea {
   height: fit-content;
   padding-top: 1em;
 }
